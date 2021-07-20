@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,max1,max,min1,min;
+	printf("enter three numbers\n");
+	scanf("%d%d%d",&a,&b,&c);
+	max1 =(a>b)?a:b;
+	max = (c>max1)?c:max1;
+	min1 =(a<b)?a:b;
+	min =(c<min1)?c:min;
+	printf(" the largest no is %d\n the smallest no is %d",max,min);
+	return 0;
+}
