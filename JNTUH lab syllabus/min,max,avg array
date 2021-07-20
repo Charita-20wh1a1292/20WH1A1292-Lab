@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,a[20],max=0,min=1000000,sum=0;
+	float avg;
+	printf("enter no of array elements\n");
+	scanf("%d",&n);
+	printf("enter array elements\n");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+		max=max<a[i]?a[i]:max;
+		min=min>a[i]?a[i]:min;
+		sum = sum + a[i];		
+	}
+	avg = sum / n;
+	printf(" min\n max\n avg\n values are:%d\n %d\n %f\n",min,max,avg);
+	return 0;
+	
+}
