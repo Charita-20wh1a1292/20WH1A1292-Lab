@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int floors,height,s;
+	float a=9.8,t;
+	printf("enter no of floors\n");
+	scanf("%d",&floors);
+	printf("enter height of each floor\n");
+	scanf("%d",&height);
+	s = floors*height;
+	printf("distance travelled = %d",s);
+	printf("\ncalculating time\n");
+	//using formula s = u*t + 0.5 a*t*t , u=0
+	t=sqrt(2*s/a);
+	printf("%f",t);
+	return 0;
+}
